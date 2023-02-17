@@ -1,0 +1,22 @@
+Soru 1:
+
+[16,21,11,8,12,22] -> Merge Sort
+
+-Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+-Big-O gösterimini yazınız.
+
+Çözüm: 
+
+           [16,21,11,8,12,22] 
+               /          \                              1)Esas diziyi önce [16,21,11] ve [8,12,22] olarak ayırıyoruz.
+        [16,21,11]      [8,12,22]
+          /    \         /    \                          2)Daha sonra iki dizinin de en sağdaki elemanlarını ayırıyoruz.  
+      [16,21]  [11]   [8,12]  [22]
+       /   \    \      /  \     \                        3)Daha sonra kalan elemanlarını da ayırıyoruz.
+    [16]  [21] [11]  [8]  [12]  [22]
+      \    /    /     \    /     /                       4)Sonrasında ise küçükten büyüğe sıralamaya başlıyoruz.
+     [16,21]  [11]    [8,12]   [22]
+         \    /         \       /                        5)İki dizinin de elemanlarını küçükten büyüğe sıralamış oluyoruz.
+       [11,16,21]       [8,12,22]
+            \               /                            6)En sonda da iki diziyi de birleştirerek sıralanmış esas diziyi elde ediyoruz.
+            [8,11,12,16,21,22]          
